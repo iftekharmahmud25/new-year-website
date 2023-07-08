@@ -34,20 +34,129 @@ h1 {
 }
 
 /* main start form here */
-.main-container{
+.main-container {
   display: flex;
   justify-content: space-evenly;
-
   align-items: center;
   margin-top: 200px;
 }
- .main-title {
-    font-size: 46px;
-    font-weight: bold;
-    
- }
+.main-title {
+  font-size: 46px;
+  font-weight: bold;
+}
 .main-img {
   height: 598px;
   width: 451px;
-  
+}
+/* my plan section */
+.my-plan {
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+.plan-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 56px;
+  margin-top: 30px;
+}
+.plan-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.plan-details {
+  text-align: center;
+}
+.plan-name {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.plan-goal {
+  color: #737272;
+}
+
+/* contact start here */
+
+.contact {
+  position: relative;
+  margin-bottom: 140px;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  margin-left: 40px;
+  border-radius: 8px;
+
+  left: 40;
+  width: 1140px;
+  height: 300px;
+  background-image: linear-gradient(
+    90deg,
+    #e46939 0%,
+    rgba(241, 91, 34, 0) 100%
+  );
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.contact-content {
+  display: none; /* Hide the text and button */
+}
+
+/* Show the text and button on hover */
+.contact:hover .contact-content {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.contact-content h3 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-btn {
+  padding: 12px 24px;
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  color: #e46939;
+}
+
+/* footer start here */
+
+.footer-section {
+  height: 260px;
+  background-color: #151414;
+  color: white;
+  font-weight: 400;
+  line-height: 26px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+.footer-description p {
+   font-size: 16px;
+   color: rgb(199, 197, 197);
+}
+
+.social-link {
+  margin-top: 12px;
+  width: 30px;
+  margin-right: 5px;
+}
+input {
+  width: 312px;
+ height: 34px;
+  border-radius: 6px;
+  padding-left: 5px;
+  border: none;
+  margin-bottom: 7px;
+  margin-top: 5px;
 }
