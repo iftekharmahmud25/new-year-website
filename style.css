@@ -1,17 +1,17 @@
 /* Banner Section */
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 .container {
-  height: 100vh;
+  height: 800px;
   width: 100%;
 
   background-image: url("/images/banner/banner1.png ");
 }
 
-  h1 {
+h1 {
   text-align: end;
   padding-top: 350px;
   margin-right: 90px;
@@ -25,7 +25,7 @@
 }
 
 .banner-btn {
-  margin-left: 1100px;
+  margin-left: 1090px;
   padding: 12px;
   background-color: orangered;
   border: none;
@@ -33,3 +33,21 @@
   color: white;
 }
 
+/* main start form here */
+.main-container{
+  display: flex;
+  justify-content: space-evenly;
+
+  align-items: center;
+  margin-top: 200px;
+}
+ .main-title {
+    font-size: 46px;
+    font-weight: bold;
+    
+ }
+.main-img {
+  height: 598px;
+  width: 451px;
+  
+}
